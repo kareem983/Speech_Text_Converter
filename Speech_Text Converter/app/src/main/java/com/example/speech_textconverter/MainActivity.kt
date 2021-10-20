@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 t1.language = Locale.UK
             }
         }
-
+         
         convertBtn.setOnClickListener {
             val toSpeech: String = textInput.text.toString()
             if(!toSpeech.isEmpty()) {
