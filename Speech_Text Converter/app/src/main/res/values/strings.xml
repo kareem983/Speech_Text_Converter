@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Speech_Text Converter</string>
+    <string name="Welcome_Message">Welcome to Converter</string>
+    <string name="TextToSpeech">Covert Text to Speech</string>
+    <string name="SpeechToText">Covert Speech to Text</string>
+
 </resources>

@@ -5,35 +5,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/Mic_Icon"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:src="@drawable/mic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome_Message"
+        android:textColor="#FFF"
+        android:textSize="28dp"
+        android:layout_below="@id/Mic_Icon"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
 
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_centerVertical="true">
 
         <Button
-            android:id="@+id/Go_TextToSpeech"
+            android:id="@+id/go_textToSpeech"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Covert Text to Speech"
-            android:textSize="18dp"
-            android:textColor="#000"
+            android:text="@string/TextToSpeech"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#DAFFFFFF"
+            android:background="@drawable/btn"
             android:layout_margin="5dp" />
 
         <Button
-            android:id="@+id/Go_SpeechToText"
+            android:id="@+id/go_speechToText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Covert Speech to Text"
-            android:textSize="18dp"
-            android:textColor="#000"
+            android:text="@string/SpeechToText"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#DAFFFFFF"
+            android:background="@drawable/btn"
             android:layout_margin="5dp" />
 
     </LinearLayout>
-
 
 </RelativeLayout>

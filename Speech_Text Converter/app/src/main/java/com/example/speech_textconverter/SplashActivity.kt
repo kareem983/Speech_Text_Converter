@@ -12,11 +12,12 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setTitle(" ")
 
-        binding.GoTextToSpeech.setOnClickListener{
+        binding.goTextToSpeech.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
-        binding.GoSpeechToText.setOnClickListener{
+        binding.goSpeechToText.setOnClickListener{
             startActivity(Intent(this, SpeechToTextActivity::class.java))
         }
 
