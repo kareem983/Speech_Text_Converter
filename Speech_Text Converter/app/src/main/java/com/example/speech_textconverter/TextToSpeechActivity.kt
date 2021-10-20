@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class TextToSpeechActivity : AppCompatActivity() {
     lateinit var textToSpeech: TextToSpeech
     lateinit var textInput:EditText
     lateinit var convertBtn:Button
