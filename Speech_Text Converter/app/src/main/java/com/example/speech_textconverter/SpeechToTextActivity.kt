@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.speech_textconverter.databinding.ActivitySpeechToTextBinding
 import java.util.*
 
-
 class SpeechToTextActivity : AppCompatActivity() {
     lateinit var binding: ActivitySpeechToTextBinding
     val REQUEST_CODE_SPEECH_INPUT:Int = 1
@@ -18,10 +17,10 @@ class SpeechToTextActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySpeechToTextBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setTitle("")
 
-
-        binding.MicBtn.setOnClickListener {
-            var intent: Intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+        binding.micBtn.setOnClickListener {
+            var intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             intent.putExtra(
                 RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
@@ -43,7 +42,8 @@ class SpeechToTextActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE_SPEECH_INPUT) {
             if (resultCode == RESULT_OK && data != null) {
                 val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
-                binding.textView.setText(Objects.requireNonNull(result)?.get(0))
+                val text = Objects.requireNonNull(result)?.get(0)
+                binding.textView.setText("Text: "+text)
             }
         }
     }

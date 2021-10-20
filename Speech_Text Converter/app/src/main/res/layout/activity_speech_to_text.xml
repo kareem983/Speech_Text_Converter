@@ -5,30 +5,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpeechToTextActivity">
+    tools:context=".SpeechToTextActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/convert_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/convert_speech"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
 
     <Button
-        android:id="@+id/Mic_btn"
+        android:id="@+id/mic_btn"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
-        android:text="Mic"
-        android:textSize="17dp" />
+        android:background="@drawable/btn"
+        android:text="@string/mic"
+        android:textSize="17dp"
+        android:textColor="#FFF"/>
 
 
     <TextView
         android:id="@+id/text_view"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text=""
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:gravity="center"
-        android:layout_below="@id/Mic_btn"
+        android:minHeight="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mic_btn"
         android:layout_marginTop="30dp"
-        />
-
-
+        android:layout_marginLeft="10dp"
+        android:text="@string/text"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textColor="#FFF"/>
 
 </RelativeLayout>

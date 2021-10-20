@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Speech_Text Converter</string>
+    <string name="app_name">Speech-Text Converter</string>
 
     <!--Splash Screen-->
     <string name="welcome_message">Welcome to Converter</string>
@@ -10,5 +10,10 @@
     <string name="convert_text">Convert Text to\nSpeech</string>
     <string name="enter_text">Enter a Text</string>
     <string name="convert">Convert</string>
+
+    <!--Speech to Text Screen-->
+    <string name="convert_speech">Convert Speech to\n Text</string>
+    <string name="mic">Tap to Record</string>
+    <string name="text">Text</string>
 
 </resources>

@@ -12,51 +12,51 @@
         android:id="@+id/Mic_Icon"
         android:layout_width="150dp"
         android:layout_height="180dp"
-        android:src="@drawable/mic"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mic"/>
 
     <TextView
         android:id="@+id/welcome_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_message"
-        android:textColor="#FFF"
-        android:textSize="28dp"
-        android:layout_below="@id/Mic_Icon"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"/>
+        android:layout_below="@id/Mic_Icon"
+        android:text="@string/welcome_message"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
 
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/go_textToSpeech"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/btn"
             android:text="@string/textToSpeech"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:textColor="#DAFFFFFF"
-            android:background="@drawable/btn"
-            android:layout_margin="5dp" />
+            android:textColor="#DAFFFFFF"/>
 
         <Button
             android:id="@+id/go_speechToText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/btn"
             android:text="@string/speechToText"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:textColor="#DAFFFFFF"
-            android:background="@drawable/btn"
-            android:layout_margin="5dp" />
+            android:textColor="#DAFFFFFF"/>
 
     </LinearLayout>
 
