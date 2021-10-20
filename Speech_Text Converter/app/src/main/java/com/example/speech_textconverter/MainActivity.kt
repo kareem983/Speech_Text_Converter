@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    lateinit var t1:TextToSpeech
+    lateinit var textToSpeech: TextToSpeech
     lateinit var textInput:EditText
     lateinit var convertBtn:Button
 
@@ -20,17 +20,17 @@ class MainActivity : AppCompatActivity() {
         textInput = findViewById(R.id.edit_text)
         convertBtn = findViewById(R.id.convert_bnt)
 
-        t1 = TextToSpeech(applicationContext) { status ->
+        textToSpeech = TextToSpeech(applicationContext) { status ->
             if (status != TextToSpeech.ERROR) {
-                t1.language = Locale.UK
+                textToSpeech.language = Locale.UK
             }
         }
-         
+
         convertBtn.setOnClickListener {
             val toSpeech: String = textInput.text.toString()
             if(!toSpeech.isEmpty()) {
                 Toast.makeText(this, toSpeech, Toast.LENGTH_LONG).show()
-                t1.speak(toSpeech, TextToSpeech.QUEUE_FLUSH, null)
+                textToSpeech.speak(toSpeech, TextToSpeech.QUEUE_FLUSH, null)
             }else Toast.makeText(this, "Enter a Text", Toast.LENGTH_SHORT).show()
         }
 
