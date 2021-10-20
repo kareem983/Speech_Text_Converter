@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setTitle("")
 
         textToSpeech = TextToSpeech(applicationContext) { status ->
             if (status != TextToSpeech.ERROR) {

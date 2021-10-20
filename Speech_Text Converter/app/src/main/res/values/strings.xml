@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Speech_Text Converter</string>
-    <string name="Welcome_Message">Welcome to Converter</string>
-    <string name="TextToSpeech">Covert Text to Speech</string>
-    <string name="SpeechToText">Covert Speech to Text</string>
+
+    <!--Splash Screen-->
+    <string name="welcome_message">Welcome to Converter</string>
+    <string name="textToSpeech">Covert Text to Speech</string>
+    <string name="speechToText">Covert Speech to Text</string>
+
+    <!--Text To Speech Screen-->
+    <string name="convert_text">Convert Text to\nSpeech</string>
+    <string name="enter_text">Enter a Text</string>
+    <string name="convert">Convert</string>
 
 </resources>

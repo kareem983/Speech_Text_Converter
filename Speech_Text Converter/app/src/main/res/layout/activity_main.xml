@@ -5,16 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_text"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="28dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
 
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="Enter a Text"
+        android:minHeight="50dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="#DDD"
-        android:textColor="#000"
+        android:hint="@string/enter_text"
+        android:background="@drawable/btn2"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
         android:textSize="20dp"
         android:layout_centerInParent="true" />
 
@@ -25,8 +41,9 @@
         android:layout_below="@id/edit_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Convert"
+        android:text="@string/convert"
+        android:textColor="#FFF"
+        android:background="@drawable/btn"
         android:textSize="17dp" />
-
 
 </RelativeLayout>
