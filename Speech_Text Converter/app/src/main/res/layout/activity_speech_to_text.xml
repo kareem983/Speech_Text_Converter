@@ -8,7 +8,7 @@
     tools:context=".SpeechToTextActivity">
 
     <Button
-        android:id="@+id/Mic_bnt"
+        android:id="@+id/Mic_btn"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
@@ -25,7 +25,7 @@
         android:textSize="20dp"
         android:textColor="#000"
         android:gravity="center"
-        android:layout_below="@id/Mic_bnt"
+        android:layout_below="@id/Mic_btn"
         android:layout_marginTop="30dp"
         />
 

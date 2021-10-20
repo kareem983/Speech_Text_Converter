@@ -3,27 +3,24 @@ package com.example.speech_textconverter
 import android.content.Intent
 import android.os.Bundle
 import android.speech.RecognizerIntent
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
+import com.example.speech_textconverter.databinding.ActivitySpeechToTextBinding
 import java.util.*
 
 
 class SpeechToTextActivity : AppCompatActivity() {
-    lateinit var mic_Btn:Button
-    lateinit var textview:TextView
+    lateinit var binding: ActivitySpeechToTextBinding
     val REQUEST_CODE_SPEECH_INPUT:Int = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_speech_to_text)
+        binding = ActivitySpeechToTextBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        mic_Btn = findViewById(R.id.Mic_bnt)
-        textview = findViewById(R.id.text_view)
 
-        mic_Btn.setOnClickListener {
+        binding.MicBtn.setOnClickListener {
             var intent: Intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             intent.putExtra(
                 RecognizerIntent.EXTRA_LANGUAGE_MODEL,
@@ -46,7 +43,7 @@ class SpeechToTextActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE_SPEECH_INPUT) {
             if (resultCode == RESULT_OK && data != null) {
                 val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
-                textview.setText(Objects.requireNonNull(result)?.get(0))
+                binding.textView.setText(Objects.requireNonNull(result)?.get(0))
             }
         }
     }
