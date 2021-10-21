@@ -46,6 +46,14 @@ Speech-Text Converter is a simple task that enable the user to convert the speec
 
 </p>
 
+<p>
+
+### 5.Mic On, Record a Voice
+
+![5](https://user-images.githubusercontent.com/52586356/138191674-23299d78-07a7-42fd-96a0-861272bd4089.png)
+
+</p>
+
 </details>
 
 ## Resources
