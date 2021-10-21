@@ -15,7 +15,9 @@ Speech-Text Converter is a simple task that enable the user to convert the speec
 <details>
   <summary>Home Screen</summary>
 <p>
+
 ![1](https://user-images.githubusercontent.com/52586356/138191107-440439c9-e796-46d6-9ea9-bb90d5681971.png)
+
 </p>
 
 </details>
