@@ -14,3 +14,6 @@ Speech-Text Converter is a simple task that enable the user to convert the speec
 
 - Official Documentation [Android Developers](https://developer.android.com/reference/android/speech/SpeechRecognizer)  
 - Kotlin Syntax [Kotlin Documentation](https://kotlinlang.org/docs/home.html)  
+- Conversion Syntax [Stack OverFlow](https://stackoverflow.com/questions/5913773/speech-to-text-on-android)  
+
+
