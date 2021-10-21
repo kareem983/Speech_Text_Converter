@@ -38,6 +38,14 @@ Speech-Text Converter is a simple task that enable the user to convert the speec
 
 </p>
 
+<p>
+
+### 4.Convert Speech to Text
+
+![4](https://user-images.githubusercontent.com/52586356/138191588-5cc21980-6e60-4e37-9284-63b9a684c79b.png)
+
+</p>
+
 </details>
 
 ## Resources
